@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout<<"Enter two numbers"<<endl;
+	int a,b;
+	cin>>a>>b;
+	cout<<"Enter your Choice"<<endl;
+	cout<<"1. Addition"<<endl;
+	cout<<"2. Subtraction"<<endl;
+	cout<<"3. Division"<<endl;
+	cout<<"4. Multiplication"<<endl;
+	cout<<"5. Remainder"<<endl;
+	cout<<"6. Percentage"<<endl;
+	int choice;
+	cin>>choice;
+
+	if(choice==1){
+        int c = a+b;
+        cout<<c<<endl;
+	}
+	else if(choice==2){
+        int c = a-b;
+        cout<<c<<endl;
+    }
+    else if(choice==3){
+        int c = a/b;
+        cout<<c<<endl;
+    }
+    else if(choice==4){
+        int c =a*b;
+        cout<<c<<endl;
+    }
+    else if(choice==5){
+        int c = a%b;
+        cout<<c<<endl;
+    }
+    else if(choice==6){
+    	int c = (a*b)/100;
+    	cout<<c<<endl;
+    }
+    else{
+        cout<<"Invalid choice"<<endl;
+    }
+	return 0;
+}
