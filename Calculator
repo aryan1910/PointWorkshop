@@ -24,7 +24,7 @@ int main() {
         cout<<c<<endl;
     }
     else if(choice==3){
-        int c = a/b;
+        double c = (double)a/b;
         cout<<c<<endl;
     }
     else if(choice==4){
@@ -36,7 +36,7 @@ int main() {
         cout<<c<<endl;
     }
     else if(choice==6){
-    	int c = (a*b)/100;
+    	double c = (double(a)*b)/100;
     	cout<<c<<endl;
     }
     else{
