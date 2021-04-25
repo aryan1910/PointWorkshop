@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void print(){
+	cout<<"Hello World"<<endl;
+	cout<<"Hello"<<endl;
+	cout<<"Hii"<<endl;
+	cout<<"Jmjk"<<endl;
+	cout<<"Djjs"<<endl;
+}
+
+int main() {
+	print();
+	print();
+	print();
+	print();
+	print();
+	print();
+	print();
+	print();
+	return 0;
+}
