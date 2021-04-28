@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+void calculatePercentage(){
+	double maths,science,english, hindi;
+	cin>>maths>>science>>english>>hindi;
+	double percentage = (maths+science+english+hindi)*100/400;
+	cout<<"Percentage:"<<percentage<<"%"<<endl;
+	cout<<"Grade: ";
+	if(percentage>=90)
+		cout<<"A+";
+	else if(percentage>=80 and percentage<90)
+		cout<<"A";
+	else if(percentage>=70 and percentage<80)
+		cout<<"B+";
+	else if(percentage>=60 and percentage<70)
+		cout<<"B";
+	else if(percentage>=50 and percentage<60)
+		cout<<"C";
+	else if(percentage>=40 and percentage<50)
+		cout<<"D";
+	else if(percentage>=33 and percentage<40)
+		cout<<"E";
+	else
+		cout<<"F";
+	cout<<endl;
+}
+
+int main() {
+	int students;
+	cin>>students;
+	for(int i=1;i<=students;i++)
+		calculatePercentage();
+	return 0;
+}
