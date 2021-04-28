@@ -1,9 +1,11 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+
+int main() {
+	// your code goes here
 	int n;
 	cin>>n;
 	for(int i=1;i<=100;i++)
-		cout<<i<<":"<<n*i<<" ";
+		cout<<i<<"*"<<n<<":"<<n*i<<endl;
 	return 0;
 }
