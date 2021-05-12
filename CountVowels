@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+//Counting vowels in a string
+int main() {
+	string a;
+	cin>>a;
+	cout<<a.size()<<endl;
+	int count=0;
+	for(char x: a){
+		if(x=='a' || x=='e' || x=='i' || x=='o' || x=='u')
+			count++;
+	}
+	cout<<count<<endl;
+	return 0;
+}
