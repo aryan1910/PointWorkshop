@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+int countChars(string s){
+	int count = 0;
+	for(char c: s){
+		count++;
+	}
+	return count;
+}
+
+bool isEmpty(string s){
+	int count = 0;
+	for(char c: s){
+		count++;
+	}
+	if(count==0)
+		return true;
+	else
+		return false;
+}
+
+int findCharacter(string s,char x){
+	int position = -1;
+	for(int i=0;i<s.size();i++){
+		if(s[i]==x){
+			position = i;
+			break;
+		}
+	}
+	return position;
+};
+int main() {
+	// your code goes here
+	string s;
+	cin>>s;
+	//length of a string 
+	cout<<countChars(s)<<endl;// User Defined function
+	cout<<s.length()<<endl; // Library function
+	cout<<s.size()<<endl; // Library function
+	
+	//string s = ""; //Empty String
+	//Empty - tells whether string is empty or not 
+	cout<<s.empty()<<endl;
+	cout<<isEmpty(s)<<endl;//User Defined function
+	
+	// Empty 
+	cout<<s<<endl;//"aryan"
+	s.clear();
+	cout<<s<<endl;//""
+	s+="A";
+	cout<<s<<endl;
+	
+	// find - first position of the occurence of the character
+	s = "aryan";
+	cout<<s.find('z')<<endl;
+	char x = 'z';
+	cout<<findCharacter(s,x)<<endl;
+	
+	//insert - insert at a given position
+	string in = "xyz";
+	s.insert(2,in);
+	cout<<s<<endl;
+	
+	//erase - removes the string starting from a given position
+	s.erase(2,4);
+	cout<<s<<endl;
+	return 0;
+}
