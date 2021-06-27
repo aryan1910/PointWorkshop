@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	string s;
+	cin>>s;
+	unordered_map<char, int> ump;
+	for(char x: s){    //m:2 , a: 4, l:1, y: 2 
+		ump[x]++;
+	}
+	// m: 2, a: 4, l:2 ,y :1
+	int maximum = 0;
+	char max_character;
+	for(auto x: ump){
+		cout<<x.first<<":"<<x.second<<"\n";
+		if(x.second>maximum){
+			max_character = x.first;
+		}
+	}
+	cout<<max_character<<endl;
+	return 0;
+}
